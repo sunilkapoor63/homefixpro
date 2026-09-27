@@ -102,7 +102,7 @@ export default function AboutSection({ onOpenBooking }) {
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-600">
                 <div className="flex items-center gap-1.5">
                   <MapPin className="w-4 h-4 text-brand-700" />
-                  <span>Sector 45, Gurugram</span>
+                  <span>Sector 4, Gurugram</span>
                 </div>
                 <span className="text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
                   Open Today

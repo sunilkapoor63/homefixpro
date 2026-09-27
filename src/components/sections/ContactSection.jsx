@@ -133,7 +133,7 @@ export default function ContactSection({ onSuccessToast }) {
                   <div>
                     <span className="text-xs font-semibold text-slate-400 block">WhatsApp Support</span>
                     <span className="text-sm font-bold text-slate-900 group-hover:text-emerald-700">
-                      Chat Now (+91 98765 43210)
+                      Chat Now ({BUSINESS_CONFIG.phoneDisplay})
                     </span>
                   </div>
                 </a>

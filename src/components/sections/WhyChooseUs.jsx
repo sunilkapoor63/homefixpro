@@ -11,6 +11,7 @@ import {
   Clock
 } from 'lucide-react';
 import SectionHeading from '../common/SectionHeading';
+import { BUSINESS_CONFIG } from '../../config/business';
 
 export default function WhyChooseUs() {
   return (
@@ -19,7 +20,7 @@ export default function WhyChooseUs() {
         
         {/* Section Heading */}
         <SectionHeading
-          eyebrow="Why Choose UrbanFix"
+          eyebrow={`Why Choose ${BUSINESS_CONFIG.shortName}`}
           title="Reliable appliance care built for Gurgaon homes"
           subtitle="We focus on upfront honesty, doorstep convenience, and practical technical expertise — so you can skip the stress of unverified repairmen."
         />

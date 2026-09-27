@@ -18,10 +18,10 @@ export default function CallFloatingButton() {
           onFocus={() => setShowTooltip(true)}
           onBlur={() => setShowTooltip(false)}
           className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-brand-700 hover:bg-brand-800 text-white shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-brand-500/40"
-          aria-label={`Call UrbanFix customer support at ${BUSINESS_CONFIG.phoneDisplay}`}
+          aria-label={`Call ${BUSINESS_CONFIG.shortName} customer support at ${BUSINESS_CONFIG.phoneDisplay}`}
         >
           <PhoneCall className="w-6 h-6 animate-none group-hover:rotate-12 transition-transform duration-200" />
-          <span className="sr-only">Call UrbanFix Helpline</span>
+          <span className="sr-only">Call {BUSINESS_CONFIG.shortName} Helpline</span>
         </a>
 
         {/* Tooltip */}
