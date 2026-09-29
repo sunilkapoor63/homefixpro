@@ -94,6 +94,7 @@ export default function ServiceIcon({ name, className = "w-6 h-6", ...props }) {
       return <Droplets className={className} {...props} />;
     case 'flame':
     case 'geyser':
+    case 'hob':
       return <Flame className={className} {...props} />;
     case 'fan':
     case 'chimney':

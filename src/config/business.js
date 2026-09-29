@@ -15,7 +15,7 @@ export const BUSINESS_CONFIG = {
   phoneDisplay: "+91 92110 40800",
   phoneRaw: "+919211040800",
   whatsappNumber: "919211040800", // Digits only with country code
-  email: "info@homesfixpro.com",
+  email: "info.homesfixpro@gmail.com",
 
   // Physical Location
   address: "Office No. 201, Ground Floor, Railway Road, Sector 4, Gurugram, Haryana",
@@ -69,7 +69,7 @@ export const BUSINESS_CONFIG = {
     "Experienced Technicians"
   ],
 
-  pricingDisclaimer: "Prices shown are starting service charges and may vary based on appliance condition, model, replacement parts, materials and work required. A final estimate will be shared after inspection."
+  pricingDisclaimer: "Check up (visit charge) is ₹199 (applicable on all appliances except items in Other Services). Prices shown are for standard products only. Extra charges may apply for additional work / parts / material. AMC prices are for 1 year."
 };
 
 export default BUSINESS_CONFIG;
