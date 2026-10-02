@@ -1,9 +1,10 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Wrench, ShieldCheck, ArrowUpRight } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ShieldCheck, ArrowUpRight } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
 import { SERVICE_CATEGORIES } from '../../data/services';
 import { getTelLink, getMailtoLink } from '../../utils/phone';
 import { createWhatsAppUrl, formatGeneralInquiryMessage } from '../../utils/whatsapp';
+import brandLogo from '../../images/logo.jpeg';
 
 export default function Footer({ onOpenLegal, onSelectServiceCategory }) {
   const currentYear = new Date().getFullYear();
@@ -28,10 +29,12 @@ export default function Footer({ onOpenLegal, onSelectServiceCategory }) {
           
           {/* Column 1: Brand & Identity (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <a href="#home" className="inline-flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-teal-600 flex items-center justify-center text-white shadow-sm">
-                <Wrench className="w-5 h-5" />
-              </div>
+            <a href="#home" className="inline-flex items-center gap-3 group">
+              <img 
+                src={brandLogo} 
+                alt={BUSINESS_CONFIG.businessName} 
+                className="w-11 h-11 rounded-full object-cover bg-white p-0.5 shadow-sm transition-transform duration-200 group-hover:scale-105 border border-slate-700" 
+              />
               <div>
                 <span className="font-heading font-extrabold text-xl text-white block leading-none">
                   {BUSINESS_CONFIG.shortName}

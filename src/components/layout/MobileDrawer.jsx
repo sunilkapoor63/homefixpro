@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { X, ChevronDown, Phone, MapPin, Wrench } from 'lucide-react';
+import { X, ChevronDown, Phone, MapPin } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
 import { SERVICE_CATEGORIES } from '../../data/services';
 import { getTelLink } from '../../utils/phone';
 import { createWhatsAppUrl, formatGeneralInquiryMessage } from '../../utils/whatsapp';
 import ServiceIcon from '../common/ServiceIcon';
+import brandLogo from '../../images/logo.jpeg';
 
 export default function MobileDrawer({ isOpen, onClose, onSelectServiceCategory, onOpenBooking }) {
   const [servicesExpanded, setServicesExpanded] = useState(false);
@@ -63,9 +64,11 @@ export default function MobileDrawer({ isOpen, onClose, onSelectServiceCategory,
         <div>
           <div className="flex items-center justify-between px-5 py-4 border-b border-slate-100 bg-slate-50/70">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-brand-700 flex items-center justify-center text-white shadow-sm">
-                <Wrench className="w-4 h-4" />
-              </div>
+              <img 
+                src={brandLogo} 
+                alt={BUSINESS_CONFIG.businessName} 
+                className="w-9 h-9 rounded-full object-cover shadow-sm border border-slate-200" 
+              />
               <div>
                 <span className="font-heading font-extrabold text-base text-slate-900 block leading-tight">
                   {BUSINESS_CONFIG.shortName}

@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronDown, Menu, Phone, Wrench, Sparkles } from 'lucide-react';
+import { ChevronDown, Menu, Phone, Sparkles } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
 import { SERVICE_CATEGORIES } from '../../data/services';
 import { getTelLink } from '../../utils/phone';
 import ServiceIcon from '../common/ServiceIcon';
 import Button from '../common/Button';
+import brandLogo from '../../images/logo.jpeg';
 
 export default function Header({ 
   onOpenMobileMenu, 
@@ -58,9 +59,11 @@ export default function Header({
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
           <a href="#home" className="flex items-center gap-3 group select-none">
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-brand-700 group-hover:bg-brand-800 flex items-center justify-center text-white shadow-sm transition-transform duration-200 group-hover:scale-105">
-              <Wrench className="w-5 h-5 text-teal-100" />
-            </div>
+            <img 
+              src={brandLogo} 
+              alt={BUSINESS_CONFIG.businessName} 
+              className="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover shadow-sm transition-transform duration-200 group-hover:scale-105 border border-slate-100" 
+            />
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="font-heading font-extrabold text-lg sm:text-xl text-slate-950 tracking-tight leading-none">
